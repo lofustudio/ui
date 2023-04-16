@@ -1,4 +1,4 @@
-# [@lofu/ui](https://npmjs.com/packages/@lofu/ui)
+# [@lofu/ui](https://npmjs.com/package/@lofu/ui)
 
 > 🛠️ Our official React UI library, built with Radix UI and TailwindCSS.
 
