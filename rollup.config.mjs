@@ -23,12 +23,22 @@ export default [
                 sourcemap: true,
             },
         ],
+        external: ["react", "react-dom"],
         plugins: [
             PeerDepsExternal(),
             resolve(),
             commonjs(),
             typescript({ tsconfig: "./tsconfig.json" }),
-            postcss(),
+            postcss({
+                config: {
+                    path: "./postcss.config.js"
+                },
+                extensions: [".css"],
+                minimize: true,
+                inject: {
+                    insertAt: "top"
+                }
+            }),
             terser(),
         ],
     },
